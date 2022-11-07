@@ -45,12 +45,7 @@ useEffect(() => {
             </div>
         </div>
 
-        {comments.map((comments) => {
-                return (
-                      <h4>{comments.name}</h4>
-              
-                  );
-                })}
+
 
 
         <div class="about">
@@ -62,7 +57,45 @@ useEffect(() => {
 			</div>
 		</div>
 	</div>
+        
 
+
+  <section class="testimonial text-center">
+        <div class="container">
+
+            <div class="heading white-heading">
+                Testimonial
+            </div>
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+             
+                <div class="carousel-inner" role="listbox">
+                {comments.map((comments) => {
+                return (
+                  <div class="carousel-item ">
+                        <div class="testimonial4_slide">
+                            <img src={comments.avatar} class="img-circle img-responsive" />
+                            <p>{comments.message} </p>
+                            <h4>{comments.name}</h4>
+                        </div>
+                    </div>
+              
+                  );
+                })}
+                    
+                   
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+ 
     </div>
 
 
