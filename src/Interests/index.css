@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+}
+
+.qualifications{
+font-size: 50px;
+	position: absolute;
+	margin-top: -450px;
+}
+.home-container {
+
+display: flex;
+height: 100vh;
+background-color: #000;
+justify-content: center;
+align-items: center;
+  }
+  
+  .home-container .logo {
+	position: inherit;
+	margin-top: 120px;
+	height: 520px;
+	width: 520px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	user-select: none;
+
+  }
+  
+  .home-container .logo .hover-show {
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+	cursor: pointer;
+  }
+  
+  .home-container .logo .hover-show {
+	animation: showspin 8s linear 1s infinite;
+  }
+  
+  @keyframes showspin {
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+  
+  .home-container .logo .circle {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: rgb(4, 4, 44);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.2s ease;
+	opacity: 0;
+  }
+  
+  .home-container .logo .hover-show .circle {
+	opacity: 1;
+  }
+  
+  .home-container .logo .hover-show .circle:nth-child(1) {
+	background: url(../props/html.png);
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	transform: translateY(-210%);
+  }
+  .home-container .logo .hover-show .circle:nth-child(2) {
+	position: absolute;
+	transform: translateX(150%) translateY(-150%);
+	background: url(../props/css.png);
+	background-size: cover;
+	background-position: center;
+  }
+  .home-container .logo .hover-show .circle:nth-child(3) {
+	position: absolute;
+	transform: translateX(210%);
+	background: url(../props/js.jpg);
+	background-size: cover;
+	background-position: center;
+  }
+  .home-container .logo .hover-show .circle:nth-child(4) {
+	position: absolute;
+	transform: translateX(150%) translateY(150%);
+	background: url(../props/bootstrap.png);
+	background-size: cover;
+	background-position: center;
+  }
+  .home-container .logo .hover-show .circle:nth-child(5) {
+	position: absolute;
+	transform: translateY(210%);
+	background: url(../props/react.png);
+	background-size: cover;
+	background-position: center;
+  }
+  .home-container .logo .hover-show .circle:nth-child(6) {
+	position: absolute;
+	transform: translateX(-150%) translateY(150%);
+	background: url(../props/mui.png);
+	background-size: cover;
+	background-position: center;
+  }
+  .home-container .logo .hover-show .circle:nth-child(7) {
+	position: absolute;
+	transform: translateX(-210%);
+	background: url(../props/java.png);
+	background-size: cover;
+	background-position: center;
+  }
+  .home-container .logo .hover-show .circle:nth-child(8) {
+	position: absolute;
+	transform: translateX(-150%) translateY(-150%);
+	background: url(../props/c-sharp.png);
+	background-size: cover;
+	background-position: center;
+  }
+  
+  .home-container img {
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	transform: translate(-200px);
+	opacity: 0;
+	animation: fade-in 1s ease 1 0.5s forwards;
+  }
+  
+  @keyframes fade-in {
+	to {
+	  transform: translate(0);
+	  opacity: 1;
+	}
+  }
+  
+
+
+
+
+  .interest-container{
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	margin: 0;
+  }
+  .interest-container2{
+	width: 100vw;
+	height: 100vh;
+	background-color: #131B23;
+	margin: 0;
+  }
+  .interest-title{
+	font-size: 40px;
+	color: white;
+	padding-top: 100px;
+	padding-left: 100px;
+  }
+  
+  .interest-description{
+	width: 50vw;
+	padding-left: 120px;
+	padding-top: 50px;
+  }
+  .interest-img{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+margin-left: 50%;
+	position: relative;
+  }
+
+  
